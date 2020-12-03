@@ -7,10 +7,72 @@
     <h1>Jordan Carter</h1>
       <img src="/users/jordan/pictures/jordancarter.png" alt="Picture of Me">
       <p>
-        My Name is Jordan Carter. I am 22 years old, graduated with my Bachelor's in Computer Science in May 2020, and work as an IT Support Specialist for an AT&T Authorized Retailer company. <br>
+        My name is Jordan Carter. I am 22 years old, graduated with my Bachelor's in Computer Science in May 2020, and work as an IT Support Specialist for an AT&T Authorized Retailer company. <br>
         I am attempting to learn web development and my project right now is to make a blog. I think I want the blog to just be about my journey to learning software development and for documenting <br>
         what I've learned and my general outlook on software development as a whole. Maybe the content of the blog will change over time as I learn more and more.
       </p>
-      test123 - test back 123 lul
+
+      <form action="submission.html">
+
+        <h1>Random form with multiple functionalities</h1>
+
+        <section> <!--Field entry for username and password; Replaced labels with placeholders; added minimum length for both-->
+          <input type="username" placeholder="Username" name="username" minlength="6"> 
+          <input type="password" placeholder="Password" name="password" minlength="8">
+        </section>
+        <br>
+        <br>
+        <section> <!--slider-->
+          <label for="attractiveness">How hot is Jordan Carter?</label>
+          <br>
+          <span>1</span>
+          <input type="range" name="attractiveness" id="attractiveness" min="1" max="10" step="0.1">
+          <span>10</span>
+        </section>
+        <br>
+        <section> <!--checkbox-->
+          <p>Would you date Jordan Carter?</p>
+          <input type="checkbox" name="datecheck" id="yes">
+          <label for="yes">Yes</label>
+          <input type="checkbox" name="datecheck" id="no">
+          <label for="no">No</label>
+        </section>
+        <br>
+        <section><!--radio button-->
+          <p>Would you date Jordan Carter radio button style?</p>
+          <input type="radio" name="date" id="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="date" id="no">
+          <label for="no">No</label>
+        </section>
+        <br>
+        <section> <!--dropdown list-->
+          <label for="location">Where are you from?</label>
+          <select name="location" id="location">
+            <option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="Mexico">Mexico</option>
+            <option value="South America">South America</option>
+            <option value="Other Continent">Other Continent</option>
+          </select>
+        </section>
+        <br>
+        <br>
+        <section> <!--datalist-->
+          <label for="favorite food">Favorite Food</label>
+          <input list="food" id="favorite food" name="favorite food" required>
+          <datalist id="food">
+            <option value="Italian"></option>
+            <option value="Mexican"></option>
+            <option value="Chinese"></option>
+            <option value="Greek"></option>
+            <option value="American"></option>
+            <option value="Seafood"></option>
+          </datalist>
+        </section>
+        <br>
+        <!-- submit button -->
+        <input type="submit"> 
+      </form>
   </body>
   </html>
